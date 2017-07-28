@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Molinux - Blog</title>
+    <title>Molinux - Tutoriais</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,6 +42,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
+<!--                <a class="navbar-brand" href="index.html">MOLINUX</a>-->
                 <a class="navbar-brand" href="index.html">
                     <img alt="molinux" src="img/molinux-navbar.svg">
                 </a>
@@ -71,83 +72,64 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Marcus Molinero</h1>
-                        <hr class="small">
-                        <span class="subheading">Linux & OpenSource Specialist</span>
+                    <div class="post-heading">
+                        <h1>Bacula x OpenSSL 1.1</h1>
+                        <h2 class="subheading">Enquanto a solução definitiva não sai, veja como contornar o problema</h2>
+                        <span class="meta">Posted by <a href="#">Marcus "Molinux" Molinero</a> on July 28, 2017</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Bacula não funciona com OpenSSL 1.1
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Enquanto não se tem a solução definitiva, veja como criar uma solução de contorno
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Marcus "Molinux" Molinero</a> on July 28, 2017</p>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h3>O Problema</h3>
+                    <p>Essa semana tive a surpresa de ver alguns dos meus servidores dando erro no bacula-fd. Simplesmente pararam de funcionar e não subiam mais.</p>
+
+                    <p>Descobri então que o problema estava com a atualização do OpenSSL para a versão 1.1, que até o momento dessa postagem, ainda é incompatível com o Bacula, como pode ser visto <a href="http://bugs.bacula.org/view.php?id=2247">aqui.</a></p>
+
+                    <p>E que o torna também incompatível com o Debian 9, como pode ser visto <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=850895">aqui.</a></p>
+
+                    <h2 class="section-heading">A Solução </h2>
+                    
+                    <p>É possível ter 2 OpenSSL coexistindo na mesma máquina e para isso, vou partir do princípio que você tenha o mesmo cenário que o meu. O OpenSSL-1.1 instalado via pacote da sua distribuição e o Bacula compilado ( e não instalado via pacote ).</p>
+
+                    <p>Instalaremos então a versão 1.0 em um local alternativo.</p>
+
+                    <h3>Baixando e instalando o OpenSSL-1.0.2l</h3>
+                    
+                    <blockquote>
+                            cd /usr/src/<br>
+                            wget -c https://www.openssl.org/source/openssl-1.0.2l.tar.gz<br>
+                            tar xzvf openssl-1.0.2l.tar.gz<br>
+                            cd openssl-1.0.2l/<br>
+                            ./config --prefix=/usr/local --openssldir=/usr/local/openssl<br>
+                            make<br>
+                            make test   <i>#passo opcional</i><br>
+                            make install
+                    </blockquote>
+                        
+                    <h3>Recompilando e instalando o Bacula-FD com o OpenSSL-1.0.2l</h3>
+                    
+                    <blockquote>
+                        cd ../bacula-7.4.7/<br>
+                        ./configure --enable-client-only --with-systemd --with-openssl=/usr/local/openssl<br>
+                        make<br>
+                        make install<br>
+                        systemctl restart bacula-fd.service<br>
+                    </blockquote>
                 </div>
-                <hr>
-<!--
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Science has not yet mastered prophecy
-                        </h2>
-                        <h3 class="post-subtitle">
-                            We predict too much for the next year and yet far too little for the next ten.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Failure is not an option
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
-                </div>
--->
-                <hr>
-<!--                 Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                    <li class="previous">
-                        <a href="index.html">&larr; New Posts</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
+    </article>
 
     <hr>
 

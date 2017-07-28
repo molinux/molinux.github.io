@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW X6 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="129"
+   height="29.702198"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 1433.2724 330.00446"
+   id="svg3088"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="molinux-navbar.svg"
+   inkscape:export-filename="/home/molinero/Documents/Projetos/Projeto-GitHub/molinux.github.io/img/molinux-navbar.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"><metadata
+     id="metadata3113"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1022"
+     id="namedview3111"
+     showgrid="false"
+     inkscape:zoom="4.1978984"
+     inkscape:cx="10.005252"
+     inkscape:cy="42.203181"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4862"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px"
+     inkscape:snap-text-baseline="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" /><defs
+     id="defs3090"><style
+       type="text/css"
+       id="style3092">
+    .str2 {stroke:white;stroke-width:2.5}
+    .str1 {stroke:white;stroke-width:7.87402}
+    .str0 {stroke:black;stroke-width:40}
+    .fil1 {fill:black}
+    .fil0 {fill:#008FFF}
+    .fil2 {fill:white}
+    .fil3 {fill:white;fill-rule:nonzero}
+   </style></defs><g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Fundo"
+     style="display:inline"
+     transform="translate(-4799.683,-5389.0404)"><text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:166.65959167px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="7196.4702"
+       y="6318.6851"
+       id="text7176"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7178"
+         x="7196.4702"
+         y="6318.6851" /></text>
+</g><g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Slogan"
+     style="display:inline"
+     transform="translate(-4799.683,-5389.0404)" /><g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Logo"
+     style="display:inline"
+     transform="translate(-4799.683,-5389.0404)"><g
+       id="g4862"
+       transform="matrix(0.40469402,0,0,0.40469402,3645.303,3963.1521)"><g
+         id="g7050"
+         transform="matrix(0.96101049,0,0,0.96101049,111.21663,169.16856)"><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:444.42556763px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;clip-rule:evenodd;display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+           x="2972.291"
+           y="4155.5864"
+           id="text4825"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4827"
+             x="2972.291"
+             y="4155.5864"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:694.42523193px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1">MOLINUX</tspan></text>
+<rect
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:79.27727509;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4844"
+           width="3606.031"
+           height="769.26349"
+           x="2892.1147"
+           y="3529.9207"
+           rx="0"
+           ry="0" /></g></g></g></svg>
